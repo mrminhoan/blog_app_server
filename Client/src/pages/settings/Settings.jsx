@@ -12,7 +12,7 @@ export default function Settings() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [success, setSuccess] = useState(false)
-    const PF = "http://localhost:5000/images/"
+    const PF = process.env.REACT_APP_TEST_PF_URL
     const handleSubmit =  async (e)=>{
         e.preventDefault()
         

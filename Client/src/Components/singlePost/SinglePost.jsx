@@ -8,7 +8,7 @@ import { Context } from '../../Context/Context'
 import { axiosInstance } from '../../config'
 
 export default function SinglePost() {
-    const PF = "http://localhost:5000/images/"
+    const PF = process.env.REACT_APP_TEST_PF_URL
     const location = useLocation()
     const [post, setPost] = useState({})
 

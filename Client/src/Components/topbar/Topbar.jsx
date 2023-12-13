@@ -4,7 +4,7 @@ import { Context } from '../../Context/Context'
 import "./Topbar.css"
 import * as actions from "../../Context/Actions"
 export default function Topbar() {
-    const PF = "http://localhost:5000/images/"
+    const PF = process.env.REACT_APP_TEST_PF_URL
     const { user, dispatch } = useContext(Context)
     const handleLogout = () => {
         dispatch(actions.LOGOUT())

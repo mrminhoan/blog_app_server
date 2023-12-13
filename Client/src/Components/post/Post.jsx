@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Post.css'
 export default function Post({post}) {
-    const PF = "http://localhost:5000/images/"
+    const PF = process.env.REACT_APP_TEST_PF_URL
     return (
         <div className='post'>
             {post.photo &&(
